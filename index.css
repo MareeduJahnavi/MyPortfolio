@@ -1,0 +1,293 @@
+header {
+    background-image: url('B1.jpg');
+    height: 100vh;
+    color: rgb(14, 160, 185);
+    text-align: center;
+}
+
+.masthead-heading {
+    margin: 0;
+}
+
+.navbar-brand {
+    margin-right: auto; /* This will push the brand text to the left */
+  }
+
+.aboutme{
+    padding-top: 10px;
+}
+
+.aboutme p {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Times New Roman';
+    color: purple;
+    animation-name: a;
+    animation-duration: 5s;
+    border: 1px ridge rgb(223, 218, 219);
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+@keyframes a {
+    from { color: purple; }
+    to { color: rgb(9, 126, 100); }
+}
+
+.button-container {
+    display: flex;
+}
+
+.button {
+    margin-bottom: 30px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: #a04183; /* LinkedIn color */
+    border: 1px solid #a04183; /* LinkedIn color */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:nth-child(1) {
+    margin-right: 10px;
+}
+
+.button:hover {
+    background-color: #a04183; 
+    color: white;
+    font-weight: bolder;
+}
+
+.custom-container {
+    max-width: 100%; /* Set the maximum width to 100% of the viewport width */
+}
+
+.education{
+    padding-top: 10px;
+}
+
+.education .img{
+    background-image: url('B21.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    min-height: 80vh;
+}
+
+.education table {
+    border-color: #9E9D89;
+    font-size: larger;
+    font-family: Georgia;
+    color: white;
+}
+
+.education .details #s1 {
+    font-size: 30px;
+    color: #FB2576;
+}
+
+.education .skill {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation-name: fadeInUp;
+    animation-duration: 2s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.education .skill span {
+    font-size: 22px;
+    margin: 10px;
+}
+
+.skill span {
+    color: #208670;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.skill span:hover {
+    background-color: #57cbe7;
+    display: inline-block;
+    color: rgb(235, 28, 207);
+    margin: 4px;
+    padding: 7px;
+    font-weight: bolder;
+}
+
+.project{
+    padding-top: 10px;
+}
+
+.project-con{
+    background-image: linear-gradient(#ffffff, #F6C6EA, #e5f082, #C9F4AA, #2CD3E1);
+}
+
+.project .pro #h2{
+    background: linear-gradient(90deg, #00f, #2a00ff, #50f, #f00, #ff2b00, #f50, #ff8000, #fa0, #ffd500, #ff0, #d4ff00, #af0, #80ff00, #5f0, #2bff00, #0f0, #00ff2b, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d4ff, #0af, #007fff, #05f, #002bff, #7f00ff, #a0f, #d400ff, #f0f, #ff00d4, #f0a, #ff0080, #f05, #ff002b, #f00);
+    color: #0000;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.project .pro #h4{
+    color: #9b5683;
+}
+
+.project #p1,#p2{
+    font-size: 18px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: justify;
+}
+
+#p1::first-letter{
+    font-size: 30px;
+    color: #2b28e0;
+}
+#p1{
+    color: #6F4C5B;
+}
+#p2{
+    color: #9D3C72;
+}
+
+.project .img{
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+}
+
+.image-wrapper {
+    text-align: center;
+    margin-top: 10px; /* Adjust the margin between image-label pairs */
+}
+
+.image-wrapper img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.project .img #s1,#s2{
+    font-size: 25px;
+}
+
+.certification .cert{
+    background-image: url("B4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: -20px; /* Adjusted negative margin to create a gap between columns */
+}
+
+.certification .cert-item {
+    margin-bottom: 20px;
+}
+
+.certification .cert-item img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #fff;
+    margin-bottom: 10px;
+}
+.certification .cert-item p{
+    font-weight: bold;
+}
+
+.certification .cert-name {
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Bootstrap grid classes */
+@media (min-width: 768px) {
+    .certification .cert-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 992px) {
+    .certification .cert-item {
+        flex-direction: row;
+    }
+}
+
+.certification .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.certification .col-md-4 {
+    flex: 0 0 calc(33.3333% - 20px);
+    margin: 10px;
+}
+
+.certification .gap{
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.certification .cert-item .c1, .c3, .c5, .c7, .c9{
+    margin-left: 150px;
+}
+
+.certification .cert-item .c2, .c4, .c6, .c8, .c10{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.contact form {
+    background-color: rgb(43, 94, 112);
+    width: 40%;
+    height: auto;
+    color: white;
+    border: 7px solid rgb(37, 121, 160);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+@media (max-width: 768px) {
+    .contact form {
+        width: 80%; /* Adjust as needed for smaller screens */
+    }
+}
